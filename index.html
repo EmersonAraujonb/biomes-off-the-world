@@ -16,6 +16,28 @@
 
             .carousel-item img {
                 height: 500px;
+                width: auto;
+            }
+            @media (max-width: 768px) { 
+                .col-sm-12 {
+                    flex: 0 0 auto;
+                    width: 100%;  
+                }
+                .carousel-item img {
+                    height: auto;
+                    margin-top: 10%;
+                }
+            }
+            @media (max-width: 575px) { 
+                .carousel-item img {
+                    margin-top: 7%;
+                }
+            }
+
+            @media (max-width: 400px) { 
+                .carousel-item img {
+                    margin-top: 10%;
+                }
             }
         </style>
 </head>
@@ -40,7 +62,7 @@
     </nav>
     <div class="container">
         <div id="containerCarousel">
-            <div id="carouselImages" class="carousel carousel-fade slide col-sm-12" data-bs-ride="carousel" data-bs-interval="3000">
+            <div id="carouselImages" class="carousel carousel-fade slide col-sm-12 mt-sm-5 mt-md-5" data-bs-ride="carousel" data-bs-interval="3000">
                 <div class="carousel-inner " >
                     <div class="carousel-item active">
                         <img src="https://cdn.pixabay.com/photo/2020/07/01/12/59/mountains-5359563_960_720.jpg" class="d-block w-100" alt="Tundra">
@@ -107,7 +129,7 @@
         <div class="container text-center" id="biomas">
             <h1 class="fw-semibold m-5 text-center">Os sete principais biomas mundial.</h1>
             <div class="row row-cols-3">
-                <div class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
+                <div class="col col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
                     <div class="card" style="width: 22rem;">
                         <div class="card-body">
                             <h5 class="card-title">Tundra</h5>
@@ -116,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
+                <div class="col col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
                     <div class="card" style="width: 22rem;">
                         <div class="card-body">
                             <h5 class="card-title">Taiga</h5>
@@ -125,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
+                <div class="col col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
                     <div class="card" style="width: 22rem;">
                         <div class="card-body">
                             <h5 class="card-title">Floresta Temperada</h5>
@@ -134,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
+                <div class="col col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
                     <div class="card" style="width: 22rem;">
                         <div class="card-body">
                             <h5 class="card-title">Floresta Tropical</h5>
@@ -143,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
+                <div class="col col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
                     <div class="card" style="width: 22rem;">
                         <div class="card-body">
                             <h5 class="card-title">Savana</h5>
@@ -152,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
+                <div class="col col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
                     <div class="card" style="width: 22rem;">
                         <div class="card-body">
                             <h5 class="card-title">Campos </h5>
@@ -161,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3 d-flex justify-content-center">
+                <div class="col col-lg-4 col-md-6 col-sm-12 mb-3 d-flex justify-content-center">
                     <div class="card" style="width: 22rem;">
                         <div class="card-body">
                             <h5 class="card-title">Desertos</h5>
